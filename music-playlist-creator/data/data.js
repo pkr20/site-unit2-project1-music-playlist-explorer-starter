@@ -345,7 +345,7 @@ let data = { "playlists": [
     {
       "playlistID": 7,
       "playlist_name": "Nothing But The Classics",
-      "playlist_creator": "Echo Enthusiast",
+      "playlist_creator": "Melody Maven",
       "playlist_art": "https://picsum.photos/id/22/200",
       "likeCount": 3,
       "songs": [
