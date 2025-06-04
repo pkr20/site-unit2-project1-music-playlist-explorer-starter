@@ -3,4 +3,35 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+
+
+}
+
+header, footer {
+    background-color: rgb(252, 223, 247);
+    padding: 15px;
+}
+h1 {
+    color: rgb(113, 99, 99)
+}
+.playlist-cards {
+    
+    border-radius: 8px;
+    border-width: 25px;
+    border: dotted;
+    gap: 20px;
+    align-items: center;
+
+    padding: 10px;
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border: dotted;
 }
