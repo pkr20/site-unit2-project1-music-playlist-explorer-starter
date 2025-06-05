@@ -15,62 +15,53 @@
     </header>
 
     <main> 
-        <article class="playlist-cards">
-            <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
+        <div class="playlist-grid">
+            <article class="playlist-cards" onclick="openModal({title: 'Calm Music', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
+                <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
+                <h2>Playlist Title</h2>
+                <p>Creator Name</p>
+                <img src="assets/img/heart.png" alt="heart" width=12px>
+            </article>
+            <article class="playlist-cards" onclick="openModal({title: 'Workout Playlist', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
+                <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
+                <h2>Playlist Title</h2>
+                <p>Creator Name</p>
+                <img src="assets/img/heart.png" alt="heart" width=12px>
+            </article>
+            <article class="playlist-cards" onclick="openModal({title: 'Study Session', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
+                <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
+                <h2>Playlist Title</h2>
+                <p>Creator Name</p>
+                <img src="assets/img/heart.png" alt="heart" width=12px>
+            </article>
+            <article class="playlist-cards" onclick="openModal({title: 'Party Reggaeton Mix', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
+                <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
+                <h2>Playlist Title</h2>
+                <p>Creator Name</p>
+                <img src="assets/img/heart.png" alt="heart" width=12px>
+            </article>
+            <article class="playlist-cards" onclick="openModal({title: 'Upbeat Music', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
+                <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
+                <h2>Playlist Title</h2>
+                <p>Creator Name</p>
+                <img src="assets/img/heart.png" alt="heart" width=12px>
+            </article>
+            <article class="playlist-cards" onclick="openModal({title: 'Friends Mix', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
+                <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
+                <h2>Playlist Title</h2>
+                <p>Creator Name</p>
+                <img src="assets/img/heart.png" alt="heart" width=12px>
+            </article>
+        </div>
         
-            <h2>Playlist Title</h2>
-            <p>Creator Name</p>
-            <img src="assets/img/heart.png" alt="heart" width=12px>
-        </article>
-        <article class="playlist-cards">
-            <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-        
-            <h2>Playlist Title</h2>
-            <p>Creator Name</p>
-            <img src="assets/img/heart.png" alt="heart" width=12px>
-        </article>
-        <article class="playlist-cards">
-            <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-        
-            <h2>Playlist Title</h2>
-            <p>Creator Name</p>
-            <img src="assets/img/heart.png" alt="heart" width=12px>
-        </article>
-        <article class="playlist-cards">
-            <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-        
-            <h2>Playlist Title</h2>
-            <p>Creator Name</p>
-            <img src="assets/img/heart.png" alt="heart" width=12px>
-        </article><article class="playlist-cards">
-            <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-        
-            <h2>Playlist Title</h2>
-            <p>Creator Name</p>
-            <img src="assets/img/heart.png" alt="heart" width=12px>
-        </article><article class="playlist-cards">
-            <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-        
-            <h2>Playlist Title</h2>
-            <p>Creator Name</p>
-            <img src="assets/img/heart.png" alt="heart" width=12px>
-        </article>
-        </article><article class="playlist-cards">
-            <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-        
-            <h2>Playlist Title</h2>
-            <p>Creator Name</p>
-            <img src="assets/img/heart.png" alt="heart" width=12px>
-        </article>
-        </article><article class="playlist-cards">
-            <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-        
-            <h2>Playlist Title</h2>
-            <p>Creator Name</p>
-            <img src="assets/img/heart.png" alt="heart" width=12px>
-        </article>
-        
-        
+        <div id="playlist-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 id="playlist-name">Playlist Title</h1>
+                <img id="playlist-img" src="assets/img/playlist.png" alt="Playlist Image" width="200px">
+                <p id="creator-name">Creator Name</p>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -80,4 +71,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-`
