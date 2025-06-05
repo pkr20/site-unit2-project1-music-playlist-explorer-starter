@@ -3,43 +3,265 @@
     "playlistID": "chill001",
     "playlist_name": "Calm Music",
     "playlist_author": "Alex Smith",
-    "playlist_art": "music-playlist-creator/assets/img/chill-playlist.jpg",
+    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "likes": 42,
     "songs": [
       {
         "title": "Little by Little",
         "artist": "The Marias",
         "album": "Superclean",
         "duration": "3:35",
-        "song-cover": "music-playlist-creator/assets/img/calm.jpeg"
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
       },
       {
         "title": "Get You",
         "artist": "Daniel Caesar",
         "album": "Freudian",
         "duration": "4:38",
-        "song-cover": "music-playlist-creator/assets/img/get-you.jpeg"
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
       },
       {
         "title": "Japanese Denim",
         "artist": "Daniel Caesar",
         "album": "Pilgrim's Paradise",
         "duration": "4:10",
-        "song-cover": "music-playlist-creator/assets/img/japanese-denim.jpeg"
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
       },
       {
         "title": "Pretty Boy",
         "artist": "Joji",
         "album": "Nectar",
         "duration": "2:37",
-        "song-cover": "music-playlist-creator/assets/img/pretty-boy.jpeg"
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
       },
       {
         "title": "Tadow",
         "artist": "Masego & FKJ",
         "album": "Tadow - Single",
         "duration": "5:00",
-        "song-cover": "music-playlist-creator/assets/img/tadow.jpeg"
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      }
+    ]
+  },
+  {
+    "playlistID": "reggaeton001",
+    "playlist_name": "Reggaeton Mix",
+    "playlist_author": "Mark Lopez",
+    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "likes": 87,
+    "songs": [
+      {
+        "title": "Tusa",
+        "artist": "KAROL G & Nicki Minaj",
+        "album": "Tusa - Single",
+        "duration": "3:20",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Baila Baila Baila",
+        "artist": "Ozuna",
+        "album": "Nibiru",
+        "duration": "2:42",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Dákiti",
+        "artist": "Bad Bunny & Jhay Cortez",
+        "album": "El Último Tour Del Mundo",
+        "duration": "3:25",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Felices los 4",
+        "artist": "Maluma",
+        "album": "F.A.M.E.",
+        "duration": "3:49",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Me Gusta",
+        "artist": "Anitta ft. Cardi B & Myke Towers",
+        "album": "Me Gusta - Single",
+        "duration": "3:11",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      }
+    ]
+  },
+  {
+    "playlistID": "indie001",
+    "playlist_name": "Indie Essentials",
+    "playlist_author": "Sam Parker",
+    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "likes": 65,
+    "songs": [
+      {
+        "title": "Do I Wanna Know?",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "duration": "4:33",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Take a Walk",
+        "artist": "Passion Pit",
+        "album": "Gossamer",
+        "duration": "4:24",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "The Less I Know The Better",
+        "artist": "Tame Impala",
+        "album": "Currents",
+        "duration": "3:36",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Sweet Disposition",
+        "artist": "The Temper Trap",
+        "album": "Conditions",
+        "duration": "3:52",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Electric Feel",
+        "artist": "MGMT",
+        "album": "Oracular Spectacular",
+        "duration": "3:49",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      }
+    ]
+  },
+  {
+    "playlistID": "pop001",
+    "playlist_name": "Throwback Pop",
+    "playlist_author": "DJ Retro",
+    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "likes": 124,
+    "songs": [
+      {
+        "title": "Oops!... I Did It Again",
+        "artist": "Britney Spears",
+        "album": "Oops!... I Did It Again",
+        "duration": "3:31",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Bye Bye Bye",
+        "artist": "*NSYNC",
+        "album": "No Strings Attached",
+        "duration": "3:20",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Hollaback Girl",
+        "artist": "Gwen Stefani",
+        "album": "Love. Angel. Music. Baby.",
+        "duration": "3:19",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Crazy in Love",
+        "artist": "Beyoncé feat. Jay-Z",
+        "album": "Dangerously in Love",
+        "duration": "3:56",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Since U Been Gone",
+        "artist": "Kelly Clarkson",
+        "album": "Breakaway",
+        "duration": "3:08",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      }
+    ]
+  },
+  {
+    "playlistID": "rnb001",
+    "playlist_name": "R&B Jams",
+    "playlist_author": "Jordan Cole",
+    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "likes": 93,
+    "songs": [
+      {
+        "title": "Best Part",
+        "artist": "Daniel Caesar feat. H.E.R.",
+        "album": "Freudian",
+        "duration": "3:29",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Come Through",
+        "artist": "H.E.R. feat. Chris Brown",
+        "album": "Back of My Mind",
+        "duration": "3:34",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "On & On",
+        "artist": "Erykah Badu",
+        "album": "Baduizm",
+        "duration": "3:47",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Adorn",
+        "artist": "Miguel",
+        "album": "Kaleidoscope Dream",
+        "duration": "3:14",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Let Me Love You",
+        "artist": "Mario",
+        "album": "Turning Point",
+        "duration": "4:10",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      }
+    ]
+  },
+  {
+    "playlistID": "study002",
+    "playlist_name": "Deep Focus",
+    "playlist_author": "Lena Rivers",
+    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "likes": 56,
+    "songs": [
+      {
+        "title": "Weightless",
+        "artist": "Marconi Union",
+        "album": "Weightless (Ambient Transmissions Vol. 2)",
+        "duration": "8:00",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Cold Little Heart (Instrumental)",
+        "artist": "Michael Kiwanuka",
+        "album": "Love & Hate",
+        "duration": "6:10",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+      {
+        "title": "Time",
+        "artist": "Hans Zimmer",
+        "album": "Inception",
+        "duration": "4:36",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
+      },
+
+      {
+        "title": "Spiegel im Spiegel",
+        "artist": "Arvo Pärt",
+        "album": "Alina",
+        "duration": "10:00",
+        "song-cover": "music-playlist-creator/assets/img/playlist.png"
       }
     ]
   }
+
+
+
+
+
+
+
 ]

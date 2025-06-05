@@ -10,11 +10,11 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
 
 #### CORE FEATURES
 
-- [ ] **Display Playlists**
+- [X] **Display Playlists**
   - [X] Dynamically render playlists on the homepage using JavaScript.
     - [X] Playlists should be shown in grid view.
-    - [] Playlist images should be reasonably sized (at least 6 playlists on your laptop when full screen; large enough that the playlist components detailed in the next feature are legible).
-  - [ ] Fetch data from a provided Javascript file and use it to create interactive playlist tiles.
+    - [X] Playlist images should be reasonably sized (at least 6 playlists on your laptop when full screen; large enough that the playlist components detailed in the next feature are legible).
+  - [X] Fetch data from a provided Javascript file and use it to create interactive playlist tiles.
 
 - [ ] **Playlist Components**
   - [ ] Each tile should display the playlist's:
@@ -24,20 +24,20 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
     - [ ] Like count
 
 - [ ] **Playlist Details**
-  - [ ] Create a modal pop-up view that displays detailed information about a playlist when a user clicks on a playlist tile.
+  - [X] Create a modal pop-up view that displays detailed information about a playlist when a user clicks on a playlist tile.
   - [ ] The modal should show the playlist's:
-    - [X] Cover image
+    - [ ] Cover image
     - [X] Name
     - [X] Author
-    - [ ] List of songs, including each song's:
-      - [ ] Title
-      - [ ] Artist
-      - [ ] Duration
-  - [ ] The modal itself should:
-    - [ ] Not occupy the entire screen.
-    - [ ] Have a shadow to show that it is a pop-up.
-    - [ ] Appear floating on the screen.
-    - [ ] The backdrop should appear darker or in a different shade.
+    - [X] List of songs, including each song's:
+      - [X] Title
+      - [X] Artist
+      - [X] Duration
+  - [X] The modal itself should:
+    - [X] Not occupy the entire screen.
+    - [X] Have a shadow to show that it is a pop-up.
+    - [X] Appear floating on the screen.
+    - [X] The backdrop should appear darker or in a different shade.
 
 - [ ] **Like Playlists**
   - [ ] Implement functionality to allow users to like playlists by clicking a heart icon on each playlist tile.
