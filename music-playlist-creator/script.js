@@ -3,6 +3,12 @@ const closeButton = document.getElementsByClassName("close")[0];
 
 const playlistGrid = document.querySelector(".playlist-grid");
 let playlistsData = [];
+
+
+// store liked playlists in localStorage
+let likedPlaylists = JSON.parse(localStorage.getItem('likedPlaylists')) || {};
+
+
 //fetching data from json file
 async function getPlaylists() {
     try {
@@ -32,12 +38,17 @@ function renderPlaylists() {
         // fix image path if needed
         const imagePath = playlist.playlist_art.replace('music-playlist-creator/', '');
 
+
+        // check if this playlist has been liked before
+        const isLiked = likedPlaylists[playlist.playlistID] || false;
+        const heartImage = isLiked ? "assets/img/heart.png" : "assets/heart-outline.png";
+
         playlistCard.innerHTML = `
             <img src="${imagePath}" alt="${playlist.playlist_name}" width="100px">
             <h2>${playlist.playlist_name}</h2>
             <p>${playlist.playlist_author}</p>
             <div class="likes-container">
-                <img src="assets/img/heart.png" alt="heart" width=12px>
+                <img src="${heartImage}" alt="heart" width=12px class="heart-icon" data-playlist-id="${playlist.playlistID}">
                 <span class="like-count">${playlist.likes || 0}</span>
             </div>
         `;
@@ -49,7 +60,7 @@ function renderPlaylists() {
 
 // open modal with playlist details and songs
 function openModal(playlist) {
-    // Set playlist details
+    // set playlist details
     document.getElementById('playlist-name').innerText = playlist.playlist_name;
 
     // fix image path if needed
@@ -97,5 +108,47 @@ window.onclick = function(event) {
         modal.style.display = "none"
     }
 }
-// Load playlists when the page loads
-document.addEventListener('DOMContentLoaded', getPlaylists);
+// handle heart icon clicks
+function setupLikeButtons() {
+    const heartIcons = document.querySelectorAll('.heart-icon');
+
+    heartIcons.forEach(icon => {
+        icon.addEventListener('click', function(event) {
+            event.stopPropagation(); // prevent opening the modal when clicking the heart
+
+            const playlistId = this.getAttribute('data-playlist-id');
+            const playlist = playlistsData.find(p => p.playlistID === playlistId);
+
+            if (!playlist) return;
+
+            // toggle liked state
+            const isLiked = likedPlaylists[playlistId] || false;
+
+            if (!isLiked) {
+                // like the playlist
+                playlist.likes = (playlist.likes || 0) + 1;
+                this.src = "assets/img/heart.png";
+                likedPlaylists[playlistId] = true;
+            } else {
+                // unlike the playlist
+                playlist.likes = Math.max(0, (playlist.likes || 0) - 1);
+                this.src = "assets/heart-outline.png";
+                likedPlaylists[playlistId] = false;
+            }
+
+            // update the like count display
+            const likeCountElement = this.nextElementSibling;
+            likeCountElement.textContent = playlist.likes;
+
+            // save liked state to localStorage
+            localStorage.setItem('likedPlaylists', JSON.stringify(likedPlaylists));
+        });
+    });
+}
+
+// load playlists when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    getPlaylists().then(() => {
+        setupLikeButtons();
+    });
+});
