@@ -3,35 +3,91 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
-
-
 }
 
 header, footer {
     background-color: rgb(252, 223, 247);
     padding: 15px;
 }
+
 h1 {
     color: rgb(113, 99, 99)
 }
-.playlist-cards {
-    
-    border-radius: 8px;
-    border-width: 25px;
-    border: dotted;
-    gap: 20px;
-    align-items: center;
 
-    padding: 10px;
-    
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.playlist-cards {
+    border-radius: 8px;
+    border: 2px dotted #ccc;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.playlist-cards:hover {
+    transform: scale(1.05);
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     padding: 20px;
-    justify-content: space-between;
-    align-items: center;
-    border: dotted;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+#playlist-img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+#playlist-name {
+    margin-top: 0;
+    color: #333;
+}
+
+#creator-name {
+    color: #666;
+    font-size: 1.1em;
 }
