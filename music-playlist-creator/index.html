@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,52 +14,85 @@
         <h1>Playlist Music Explorer</h1>
     </header>
 
-    <main> 
+    <main>
         <div class="playlist-grid">
             <article class="playlist-cards" onclick="openModal({title: 'Calm Music', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
                 <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-                <h2>Playlist Title</h2>
-                <p>Creator Name</p>
+                <h2>Calm Music</h2>
+                <p>Kayleen Ramirez</p>
                 <img src="assets/img/heart.png" alt="heart" width=12px>
             </article>
             <article class="playlist-cards" onclick="openModal({title: 'Workout Playlist', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
                 <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-                <h2>Playlist Title</h2>
-                <p>Creator Name</p>
+                <h2>Workout Playlist</h2>
+                <p>DJ</p>
                 <img src="assets/img/heart.png" alt="heart" width=12px>
             </article>
             <article class="playlist-cards" onclick="openModal({title: 'Study Session', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
                 <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-                <h2>Playlist Title</h2>
-                <p>Creator Name</p>
+                <h2>Study Session</h2>
+                <p>LoFi Beats</p>
                 <img src="assets/img/heart.png" alt="heart" width=12px>
             </article>
             <article class="playlist-cards" onclick="openModal({title: 'Party Reggaeton Mix', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
                 <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-                <h2>Playlist Title</h2>
-                <p>Creator Name</p>
+                <h2>Party Mix</h2>
+                <p>Mixer</p>
                 <img src="assets/img/heart.png" alt="heart" width=12px>
             </article>
             <article class="playlist-cards" onclick="openModal({title: 'Upbeat Music', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
                 <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-                <h2>Playlist Title</h2>
-                <p>Creator Name</p>
+                <h2>Upbeat Music</h2>
+                <p>Creator</p>
                 <img src="assets/img/heart.png" alt="heart" width=12px>
             </article>
             <article class="playlist-cards" onclick="openModal({title: 'Friends Mix', imageUrl: 'assets/img/playlist.png', creator: 'Kayleen Ramirez'})">
                 <img src="assets/img/playlist.png" alt="Playlist Image" width="100px">
-                <h2>Playlist Title</h2>
-                <p>Creator Name</p>
+                <h2>Friend Mix</h2>
+                <p>MusicLover</p>
                 <img src="assets/img/heart.png" alt="heart" width=12px>
             </article>
         </div>
-        
+
         <div id="playlist-modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h1 id="playlist-name">Playlist Title</h1>
                 <img id="playlist-img" src="assets/img/playlist.png" alt="Playlist Image" width="200px">
                 <p id="creator-name">Creator Name</p>
+                <div class="song-list-container">
+                    <h2>Songs</h2>
+                    <div id="song-list">
+
+                        <div class="song-item">
+                            <img src="assets/img/song.png" alt="Song Cover">
+                            <div>
+                                <strong>Little by Little</strong>
+                                <p>The Marias</p>
+                                <p>Superclean</p>
+                            </div>
+                            <span class="duration">3:45</span>
+                        </div>
+                        <div class="song-item">
+                            <img src="assets/img/song.png" alt="Song Cover">
+                            <div>
+                                <strong>Song Title 2</strong>
+                                <p>Artist Name</p>
+                                <p>Album Name</p>
+                            </div>
+                            <span class="duration">4:20</span>
+                        </div>
+                        <div class="song-item">
+                            <img src="assets/img/song.png" alt="Song Cover">
+                            <div>
+                                <strong>Song Title 3</strong>
+                                <p>Artist Name</p>
+                                <p>Album Name</p>
+                            </div>
+                            <span class="duration">3:10</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -67,7 +100,6 @@
     <footer>
         <!-- Your footer content here -->
     </footer>
-    <script src="data/data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
