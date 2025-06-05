@@ -1,0 +1,45 @@
+[
+  {
+    "playlistID": "chill001",
+    "playlist_name": "Calm Music",
+    "playlist_author": "Alex Smith",
+    "playlist_art": "music-playlist-creator/assets/img/chill-playlist.jpg",
+    "songs": [
+      {
+        "title": "Little by Little",
+        "artist": "The Marias",
+        "album": "Superclean",
+        "duration": "3:35",
+        "song-cover": "music-playlist-creator/assets/img/calm.jpeg"
+      },
+      {
+        "title": "Get You",
+        "artist": "Daniel Caesar",
+        "album": "Freudian",
+        "duration": "4:38",
+        "song-cover": "music-playlist-creator/assets/img/get-you.jpeg"
+      },
+      {
+        "title": "Japanese Denim",
+        "artist": "Daniel Caesar",
+        "album": "Pilgrim's Paradise",
+        "duration": "4:10",
+        "song-cover": "music-playlist-creator/assets/img/japanese-denim.jpeg"
+      },
+      {
+        "title": "Pretty Boy",
+        "artist": "Joji",
+        "album": "Nectar",
+        "duration": "2:37",
+        "song-cover": "music-playlist-creator/assets/img/pretty-boy.jpeg"
+      },
+      {
+        "title": "Tadow",
+        "artist": "Masego & FKJ",
+        "album": "Tadow - Single",
+        "duration": "5:00",
+        "song-cover": "music-playlist-creator/assets/img/tadow.jpeg"
+      }
+    ]
+  }
+]
