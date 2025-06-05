@@ -43,6 +43,19 @@ h1 {
     margin-top: 8px;
 }
 
+.heart-icon {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.heart-icon:hover {
+    transform: scale(1.2);
+}
+
+.heart-icon.liked {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(330deg) brightness(104%) contrast(97%);
+}
+
 .like-count {
     margin-left: 5px;
     font-size: 14px;
