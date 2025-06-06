@@ -236,6 +236,59 @@ addPlaylistForm.onsubmit = function(e) {
     addPlaylistForm.reset();
 }
 
+
+//function for search bar
+document.getElementById("search-bar").addEventListener("input", function (){
+    const query = this.value.toLowerCase();
+
+    // when search is empty, show all playlists 
+    if (query === '') {
+        renderPlaylists();
+        return;
+    }
+
+    // clear the grid, then filters and displays matching 
+    playlistGrid.innerHTML = ""; //clear grid
+``
+    playlistsData.forEach((playlist) => {
+        // checks if playlist name or author matches
+        if (playlist.playlist_name.toLowerCase().includes(query) ||
+            playlist.playlist_author.toLowerCase().includes(query)) {
+
+            displayPlaylistCard(playlist);
+        }
+    });
+
+    //setup like buttons for the displayed cards
+    setupLikeButtons();
+});
+
+// helps to display a playlist card
+function displayPlaylistCard(playlist) {
+    const playlistCard = document.createElement("article");
+    playlistCard.className = "playlist-cards";
+    playlistCard.onclick = () => openModal(playlist);
+
+    //fixes image path if needed
+    const imagePath = playlist.playlist_art.replace('music-playlist-creator/', '');
+
+    //checks if this playlist has been liked before
+    const isLiked = likedPlaylists[playlist.playlistID] || false;
+    const heartImage = isLiked ? "assets/img/heart.png" : "assets/heart-outline.png";
+
+    playlistCard.innerHTML = `
+        <img src="${imagePath}" alt="${playlist.playlist_name}" width="100px">
+        <h2>${playlist.playlist_name}</h2>
+        <p>${playlist.playlist_author}</p>
+        <div class="likes-container">
+            <img src="${heartImage}" alt="heart" width=12px class="heart-icon" data-playlist-id="${playlist.playlistID}">
+            <span class="like-count">${playlist.likes || 0}</span>
+        </div>
+    `;
+
+    playlistGrid.appendChild(playlistCard);
+}
+
 // close modals when clicking outside
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -245,15 +298,3 @@ window.onclick = function(event) {
         addPlaylistModal.style.display = "none";
     }
 }
-
-//function for search bar
-document.getElementById("search-bar").addEventListener("input", function (){
-    const query = this.value.toLowerCase();
-    const songs = document.querySelectorAll("song-list .song-item");
-
-    songs.forEach(song => {
-        const title = song.querySelector("strong").innerText.toLowerCase();
-        const artist = song.querySelector("p").innerText.toLocaleLowerCase();
-        
-    })
-})
