@@ -12,11 +12,15 @@
 <body>
     <header>
         <h1>Playlist Music Explorer</h1>
+        <div class="nav-buttons">
+            <button class="nav-button active" id="all-playlists-btn">All Playlists</button>
+            <a href="featured.html"><button class="nav-button" id="featured-btn">Featured</button></a>
+        </div>
     </header>
 
     <main>
         <div class="playlist-grid">
-            <!-- Playlist cards will be dynamically generated here -->
+            <!-- playlist cards from json file -->
         </div>
 
         <div id="playlist-modal" class="modal">
@@ -25,10 +29,11 @@
                 <h1 id="playlist-name">Playlist Title</h1>
                 <img id="playlist-img" src="assets/img/playlist.png" alt="Playlist Image" width="200px">
                 <p id="creator-name">Creator Name</p>
+                <button class="shuffle-button">🔀Shuffle Songs</button>
                 <div class="song-list-container">
                     <h2>Songs</h2>
                     <div id="song-list">
-                        <!-- Song items will be dynamically generated here -->
+                        <!-- song items from jso nfile -->
                     </div>
                 </div>
             </div>

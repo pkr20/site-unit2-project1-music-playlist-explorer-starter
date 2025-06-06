@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist Explorer - Featured</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Playlist Music Explorer</h1>
+        <div class="nav-buttons">
+            <a href="index.html"><button class="nav-button" id="all-playlists-btn">All Playlists</button></a>
+            <button class="nav-button active" id="featured-btn">Featured</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="featured-container">
+            <div class="featured-playlist">
+                <img id="featured-playlist-img" src="assets/img/playlist.png" alt="Featured Playlist" width="300px">
+                <div class="featured-details">
+                    <h2 id="featured-playlist-title">Featured Playlist</h2>
+                    <p id="featured-creator-name">Creator Name</p>
+                    <button class="shuffle-button">🔀Shuffle Songs</button>
+                </div>
+            </div>
+
+            <div class="song-list-container">
+                <h2>Songs</h2>
+                <div id="featured-song-list">
+                    <!-- Song items will be dynamically generated here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="featured.js"></script>
+</body>
+</html>
