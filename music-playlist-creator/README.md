@@ -2,7 +2,7 @@
 
 Submitted by: **Kayleen Ramirez**
 
-Estimated time spent: **14** hours spent in total
+Estimated time spent: **17** hours spent in total
 
 Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD_LINK_HERE)
 
@@ -58,14 +58,14 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
   
 - [ ] **Featured Page**
-  - [ ] Application includes a dedicated page that randomly selects and displays a playlist, showing the playlist’s:
-    - [ ] Playlist Image
-    - [ ] Playlist Name
-    - [ ] List of songs, including each song's:
-      - [ ] Title
-      - [ ] Artist
-      - [ ] Duration
-  - [ ] When the page is refreshed or reloaded, a new random playlist is displayed
+  - [X] Application includes a dedicated page that randomly selects and displays a playlist, showing the playlist’s:
+    - [X] Playlist Image
+    - [X] Playlist Name
+    - [X] List of songs, including each song's:
+      - [X] Title
+      - [X] Artist
+      - [X] Duration
+  - [X] When the page is refreshed or reloaded, a new random playlist is displayed
     - For example, navigating to the all playlists page and then back to the featured playlist page should result in a new random playlist being displayed
     - Note that because your algorithm will not be truly random, it is possible that the same playlist will feature twice in a row. 
     - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself refreshing the featured page more than once. 

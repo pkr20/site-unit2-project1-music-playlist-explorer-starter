@@ -15,12 +15,41 @@
         <div class="nav-buttons">
             <button class="nav-button active" id="all-playlists-btn">All Playlists</button>
             <a href="featured.html"><button class="nav-button" id="featured-btn">Featured</button></a>
+            <button class="nav-button" id="add-playlist-btn">Add Playlist</button>
         </div>
     </header>
 
     <main>
+        
         <div class="playlist-grid">
-            <!-- playlist cards from json file -->
+            
+        </div>
+
+        
+        <div id="add-playlist-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add New Playlist</h2>
+                <form id="add-playlist-form">
+                    <div class="form-group">
+                        <label for="playlist-name">Playlist Name:</label>
+                        <input type="text" id="playlist-name" name="playlist-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="creator-name">Creator:</label>
+                        <input type="text" id="creator-name" name="creator-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="playlist-image">Playlist Cover URL:</label>
+                        <input type="text" id="playlist-image" name="playlist-image" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="songs">Songs</label>
+                        <textarea id="songs" name="songs" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Create Playlist</button>
+                </form>
+            </div>
         </div>
 
         <div id="playlist-modal" class="modal">
@@ -28,20 +57,21 @@
                 <span class="close">&times;</span>
                 <h1 id="playlist-name">Playlist Title</h1>
                 <img id="playlist-img" src="assets/img/playlist.png" alt="Playlist Image" width="200px">
-                <p id="creator-name">Creator Name</p>
+                <p id="modal-creator-name">Creator Name</p>
                 <button class="shuffle-button">🔀Shuffle Songs</button>
                 <div class="song-list-container">
-                    <h2>Songs</h2>
+                    <h2>Songs List</h2>
+
                     <div id="song-list">
-                        <!-- song items from jso nfile -->
+
                     </div>
+
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <!-- Your footer content here -->
     </footer>
     <script src="script.js"></script>
 </body>
