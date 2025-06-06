@@ -8,6 +8,9 @@ body {
 header, footer {
     background-color: rgb(252, 223, 247);
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
@@ -177,3 +180,103 @@ main {
     color: #999;
     font-size: 0.9em;
 }
+
+.shuffle-button {
+    background-color: rgb(252, 223, 247);
+    color: rgb(113, 99, 99);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Georgia', sans-serif;
+    font-size: 1em;
+    margin: 15px 0;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.shuffle-button:hover {
+    transform: scale(1.05);
+    background-color: rgb(250, 213, 245);
+}
+
+.shuffle-button:active {
+    transform: scale(0.95);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    background-color: rgb(252, 223, 247);
+    color: rgb(113, 99, 99);
+    border: 2px solid rgb(113, 99, 99);
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Georgia', sans-serif;
+    font-size: 0.9em;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-button:hover {
+    transform: scale(1.05);
+    background-color: rgb(250, 213, 245);
+}
+
+.nav-button.active {
+    background-color: rgb(113, 99, 99);
+    color: rgb(252, 223, 247);
+}
+
+/* Featured page styles */
+.featured-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-playlist {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: rgb(217, 206, 206) 10px 10px;
+    border: 2px dotted #ccc;
+    width: 300px;
+    flex-shrink: 0;
+}
+
+#featured-playlist-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.featured-details {
+    text-align: center;
+}
+
+#featured-playlist-title {
+    color: rgb(113, 99, 99);
+    margin: 10px 0;
+}
+
+#featured-creator-name {
+    color: #666;
+    margin: 10px 0;
+}
+
+.song-list-container {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: rgb(217, 206, 206) 10px 10px;
+    border: 2px dotted #ccc;
+}
+

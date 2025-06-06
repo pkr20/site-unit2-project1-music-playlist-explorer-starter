@@ -2,7 +2,7 @@
 
 Submitted by: **Kayleen Ramirez**
 
-Estimated time spent: **7** hours spent in total
+Estimated time spent: **14** hours spent in total
 
 Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD_LINK_HERE)
 
@@ -53,8 +53,8 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
       - [ ] a playlist with a non-zero like count
 
 - [ ] **Shuffle Songs**
-  - [ ] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
-  - [ ] When the shuffle button is clicked, the playlist's songs should display in a different order.
+  - [X] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
+  - [X] When the shuffle button is clicked, the playlist's songs should display in a different order.
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
   
 - [ ] **Featured Page**

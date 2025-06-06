@@ -146,9 +146,30 @@ function setupLikeButtons() {
     });
 }
 
-// load playlists when the page loads
+// function to shuffle an array 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+// Add event listener for shuffle button
 document.addEventListener('DOMContentLoaded', () => {
     getPlaylists().then(() => {
         setupLikeButtons();
+        
+        // adding shuffle button functionality
+        const shuffleButton = document.querySelector('.shuffle-button');
+        shuffleButton.addEventListener('click', () => {
+            const songList = document.getElementById('song-list');
+            const songs = Array.from(songList.children);
+            if (songs.length > 1) {
+                const shuffledSongs = shuffleArray(songs);
+                songList.innerHTML = '';
+                shuffledSongs.forEach(song => songList.appendChild(song));
+            }
+        });
     });
 });
