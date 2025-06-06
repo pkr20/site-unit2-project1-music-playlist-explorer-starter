@@ -48,16 +48,16 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
     - [X] If previously liked:
       - [X] The like count on the playlist tile should decrease by 1.
       - [X] There should be visual feedback (such as the heart turning a different color) to show that the playlist has been unliked by the user.
-    - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please film yourself liking and unliking:
-      - [ ] a playlist with a like count of 0
-      - [ ] a playlist with a non-zero like count
+    - [X] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please film yourself liking and unliking:
+      - [X] a playlist with a like count of 0
+      - [X] a playlist with a non-zero like count
 
-- [ ] **Shuffle Songs**
+- [X] **Shuffle Songs**
   - [X] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
   - [X] When the shuffle button is clicked, the playlist's songs should display in a different order.
-  - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
+  - [X] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
   
-- [ ] **Featured Page**
+- [X] **Featured Page**
   - [X] Application includes a dedicated page that randomly selects and displays a playlist, showing the playlist’s:
     - [X] Playlist Image
     - [X] Playlist Name
@@ -68,22 +68,22 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
   - [X] When the page is refreshed or reloaded, a new random playlist is displayed
     - For example, navigating to the all playlists page and then back to the featured playlist page should result in a new random playlist being displayed
     - Note that because your algorithm will not be truly random, it is possible that the same playlist will feature twice in a row. 
-    - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself refreshing the featured page more than once. 
-  - [ ] Application includes a navigation bar or some other mechanism such that users can navigate to the page with all playlists from the featured page and vice versa without using the browser's back and forward buttons. 
+    - [X] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself refreshing the featured page more than once. 
+  - [X] Application includes a navigation bar or some other mechanism such that users can navigate to the page with all playlists from the featured page and vice versa without using the browser's back and forward buttons. 
 
 #### STRETCH FEATURES
 
-- [ ] **Add New Playlists**
-  - [ ] Allow users to create new playlists.
-  - [ ] Using a form, users can input playlist:
-    - [ ] Name
-    - [ ] Author
-    - [ ] Cover image
-    - [ ] Add one or more songs to the playlist, specifying the song's:
-      - [ ] Title
-      - [ ] Artist
-  - [ ] The resulting playlist should display in the grid view.
-  - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself adding at least two songs to the playlist. 
+- [X] **Add New Playlists**
+  - [X] Allow users to create new playlists.
+  - [X] Using a form, users can input playlist:
+    - [X] Name
+    - [X] Author
+    - [X] Cover image
+    - [X] Add one or more songs to the playlist, specifying the song's:
+      - [X] Title
+      - [X] Artist
+  - [X] The resulting playlist should display in the grid view.
+  - [X] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself adding at least two songs to the playlist. 
 
 - [ ] **Edit Existing Playlists**
   - [ ] Enable users to modify the details of existing playlists.
@@ -103,10 +103,10 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 - [ ] **Search Functionality**
   - [ ] Implement a search bar that allows users to filter playlists by:
-    - [ ] Name 
-    - [ ] Author
+    - [X] Name 
+    - [X] Author
   - [ ] The search bar should include:
-    - [ ] Text input field
+    - [X] Text input field
     - [ ] Submit/Search Button
     - [ ] Clear Button
   - [ ] Playlists matching the search query in the text input are displayed in a grid view when the user:
@@ -136,15 +136,15 @@ https://www.loom.com/share/2db49a41aece45259ba54470c4745b37?sid=cca963d3-4210-44
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+Yes I feel like the CodePath labs helped prepare me for working with CSS and Javascript and HTML. I believe the HTML was super helpful in learning the basics. Javascript and CSS were a bit more difficult, but the foundations were taught nicely. I used online resources to help me with DOM work and other parts. I believe I felt less prepared for features such as the data fetching or using submissions/forms. 
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+If I had more time, I would spend time on CSS animations, 
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+
 
 ### Open-source libraries used
 
@@ -152,4 +152,4 @@ Add your response here
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+Shoutout to the mentors Danny, Elikem, Gabe, Greg, Tabitha for being helpful and checking in!ntf
