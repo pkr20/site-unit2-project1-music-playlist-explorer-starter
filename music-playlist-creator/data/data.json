@@ -3,7 +3,7 @@
     "playlistID": "chill001",
     "playlist_name": "Calm Music",
     "playlist_author": "Alex Smith",
-    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "playlist_art": "music-playlist-creator/assets/img/calmpic.jpeg",
     "likes": 42,
     "songs": [
       {
@@ -47,7 +47,7 @@
     "playlistID": "reggaeton001",
     "playlist_name": "Reggaeton Mix",
     "playlist_author": "Mark Lopez",
-    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "playlist_art": "music-playlist-creator/assets/img/rgtn.jpeg",
     "likes": 87,
     "songs": [
       {
@@ -91,7 +91,7 @@
     "playlistID": "indie001",
     "playlist_name": "Indie Essentials",
     "playlist_author": "Sam Parker",
-    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "playlist_art": "music-playlist-creator/assets/img/indie.jpeg",
     "likes": 0,
     "songs": [
       {
@@ -135,7 +135,7 @@
     "playlistID": "pop001",
     "playlist_name": "Throwback Pop",
     "playlist_author": "DJ Retro",
-    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "playlist_art": "music-playlist-creator/assets/img/pop.jpeg",
     "likes": 124,
     "songs": [
       {
@@ -179,7 +179,7 @@
     "playlistID": "rnb001",
     "playlist_name": "R&B Jams",
     "playlist_author": "Jordan Cole",
-    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "playlist_art": "music-playlist-creator/assets/img/rbjams.jpeg",
     "likes": 93,
     "songs": [
       {
@@ -223,7 +223,7 @@
     "playlistID": "study002",
     "playlist_name": "Deep Focus",
     "playlist_author": "Lena Rivers",
-    "playlist_art": "music-playlist-creator/assets/img/playlist.png",
+    "playlist_art": "music-playlist-creator/assets/img/foucs.jpeg",
     "likes": 56,
     "songs": [
       {
