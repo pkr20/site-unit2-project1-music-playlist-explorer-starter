@@ -61,7 +61,7 @@ function renderPlaylists() {
 // open modal with playlist details and songs
 function openModal(playlist) {
     // set playlist details
-    document.getElementById('playlist-name').innerText = playlist.playlist_name;
+    document.getElementById('modal-playlist-title').innerText = playlist.playlist_name;
 
     // fix image path if needed
     const imagePath = playlist.playlist_art.replace('music-playlist-creator/', '');
@@ -249,7 +249,7 @@ document.getElementById("search-bar").addEventListener("input", function (){
 
     // clear the grid, then filters and displays matching 
     playlistGrid.innerHTML = ""; //clear grid
-``
+
     playlistsData.forEach((playlist) => {
         // checks if playlist name or author matches
         if (playlist.playlist_name.toLowerCase().includes(query) ||
