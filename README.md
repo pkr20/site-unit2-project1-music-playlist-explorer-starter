@@ -144,7 +144,7 @@ If I had more time, I would spend time on CSS animations,
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-
+Everything went how I expected since I tested a bunch of times before. I still would like to fix the search bar if I had more time. Danny gave me feedback on my way of adding new songs and I appreciated that. 
 
 ### Open-source libraries used
 
