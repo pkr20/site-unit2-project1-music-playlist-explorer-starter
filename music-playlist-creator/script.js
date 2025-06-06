@@ -146,7 +146,7 @@ function setupLikeButtons() {
     });
 }
 
-// function to shuffle an array 
+// function to shuffle an array
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -159,8 +159,8 @@ function shuffleArray(array) {
 document.addEventListener('DOMContentLoaded', () => {
     getPlaylists().then(() => {
         setupLikeButtons();
-        
-        // adding shuffle button 
+
+        // adding shuffle button
         const shuffleButton = document.querySelector('.shuffle-button');
         shuffleButton.addEventListener('click', () => {
             const songList = document.getElementById('song-list');
@@ -196,25 +196,25 @@ addPlaylistCloseBtn.onclick = function() {
 // handle add playlist form submission
 addPlaylistForm.onsubmit = function(e) {
     e.preventDefault();
-    
+
     //get form values
     const playlistName = document.getElementById("playlist-name").value;
     const creatorName = document.getElementById("creator-name").value;
     const playlistImage = document.getElementById("playlist-image").value;
     const songsText = document.getElementById("songs").value;
-    
+
     // parse though songs
     const songs = songsText.split('\n').map(song => {
-        const [title, artist, album, duration] = song.split('|').map(s => s.trim());
+        const [title, artist, album, duration] = song.split(',').map(s => s.trim());
         return {
             title,
             artist,
             album,
             duration,
-            "song-cover": playlistImage 
+            "song-cover": playlistImage
         };
     });
-    
+
     // create new playlist
     const newPlaylist = {
         playlistID: Date.now().toString(), //makes unique playlist id
@@ -224,13 +224,13 @@ addPlaylistForm.onsubmit = function(e) {
         songs: songs,
         likes: 0
     };
-    
+
     // add to playlists array
     playlistsData.push(newPlaylist);
-    
+
     // rendering playlist
     renderPlaylists();
-    
+
     // close modal and reset form
     addPlaylistModal.style.display = "none";
     addPlaylistForm.reset();
@@ -245,3 +245,15 @@ window.onclick = function(event) {
         addPlaylistModal.style.display = "none";
     }
 }
+
+//function for search bar
+document.getElementById("search-bar").addEventListener("input", function (){
+    const query = this.value.toLowerCase();
+    const songs = document.querySelectorAll("song-list .song-item");
+
+    songs.forEach(song => {
+        const title = song.querySelector("strong").innerText.toLowerCase();
+        const artist = song.querySelector("p").innerText.toLocaleLowerCase();
+        
+    })
+})

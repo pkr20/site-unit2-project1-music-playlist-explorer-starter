@@ -2,7 +2,7 @@
 
 Submitted by: **Kayleen Ramirez**
 
-Estimated time spent: **17** hours spent in total
+Estimated time spent: **14** hours spent in total
 
 Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD_LINK_HERE)
 
