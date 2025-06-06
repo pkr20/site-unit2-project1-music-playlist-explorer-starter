@@ -40,11 +40,11 @@ h1 {
 }
 
 .playlist-cards > img {
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    height: 50%;
     border-radius: 10px;
     border: solid gray 3px;
-    
+
 }
 
 .likes-container {
@@ -97,6 +97,7 @@ main {
     border-radius: 8px;
     width: 80%;
     max-width: 500px;
+    max-height: 90%;
     position: relative;
     text-align: center;
     top: 50%;
@@ -147,7 +148,7 @@ main {
 }
 
 #song-list {
-    max-height: 300px;
+    max-height: 200px;
     overflow-y: auto;
 }
 
@@ -288,3 +289,6 @@ main {
     border: 2px dotted #ccc;
 }
 
+#search-bar {
+    width: 100%;
+}
